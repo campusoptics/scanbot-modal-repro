@@ -8,7 +8,9 @@
     "scheme": "repro",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.scoylecampusoptics.repro",
+      "appleTeamId": "55U49Y3LVJ"
     },
     "android": {
       "adaptiveIcon": {
@@ -17,7 +19,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.scoylecampusoptics.repro"
     },
     "web": {
       "output": "static",
@@ -33,6 +36,15 @@
             "image": "./assets/images/splash-icon.png",
             "imageWidth": 76
           }
+        }
+      ],
+      [
+        "react-native-scanbot-barcode-scanner-sdk",
+        {
+          "iOSCameraUsageDescription": "Camera permission is needed to scan barcodes",
+          "androidCameraPermission": true,
+          "androidCameraFeature": true,
+          "mavenURLs": true
         }
       ]
     ],
